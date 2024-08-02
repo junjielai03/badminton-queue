@@ -76,16 +76,6 @@ const QueueAndStackComponent = ({ title }) => {
   return (
     <div className="component">
       <h1>{title}</h1>
-      <h2>On Court</h2>
-      <ul>
-        {stack.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <div>
-        <button onClick={removeFirstFromStack} disabled={stack.length < 1}>Remove First</button>
-        <button onClick={removeSecondFromStack} disabled={stack.length < 2}>Remove Second</button>
-      </div>
       <h2>Queue</h2>
       <div>
         <input
@@ -105,6 +95,16 @@ const QueueAndStackComponent = ({ title }) => {
           </li>
         ))}
       </ul>
+      <h2>On Court</h2>
+      <ul>
+        {stack.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <div>
+        <button onClick={removeFirstFromStack} disabled={stack.length < 1}>Remove First</button>
+        <button onClick={removeSecondFromStack} disabled={stack.length < 2}>Remove Second</button>
+      </div>
     </div>
   );
 };
