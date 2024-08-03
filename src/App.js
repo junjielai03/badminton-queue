@@ -110,10 +110,17 @@ const App = () => {
 
   // Function to add name to the selected queue
   const handleAddName = () => {
+    
+    // Make input case sensitive and split input by "/" and join together with whitespace
+    const formattedName = inputValue
+      .split("/")
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+
     if (selectedQueue === 'court1') {
-      addToQueue(inputValue, court1Queue, setCourt1Queue, court1Stack, setCourt1Stack);
+      addToQueue(formattedName, court1Queue, setCourt1Queue, court1Stack, setCourt1Stack);
     } else if (selectedQueue === 'court2') {
-      addToQueue(inputValue, court2Queue, setCourt2Queue, court2Stack, setCourt2Stack);
+      addToQueue(formattedName, court2Queue, setCourt2Queue, court2Stack, setCourt2Stack);
     }
     setInputValue('');
   };

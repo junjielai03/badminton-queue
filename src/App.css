@@ -1,4 +1,5 @@
 .container {
+  background-color: #ebe6e0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -10,7 +11,7 @@
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
 }
 
 .component {
@@ -19,7 +20,7 @@
 }
 
 .court-container {
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   margin-bottom: 20px;
   border-radius: 5px;
   background-image: url('court.jpeg'); /* Background image of badminton court */
@@ -27,7 +28,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%; /* Full width */
-  height: 199px; /* Fixed height */
+  height: 198.5px; /* Fixed height */
   box-sizing: border-box;
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Space out items */
@@ -48,7 +49,7 @@
 }
 
 .list-container {
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -67,7 +68,7 @@ ul {
 
 li {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   padding: 8px 0;
 }
