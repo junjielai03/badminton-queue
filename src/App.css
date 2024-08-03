@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  background-color: #76A165;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .half {
@@ -13,14 +14,55 @@
 }
 
 .component {
-  color: #ffffff;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.court-container {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-image: url('court.jpeg'); /* Background image of badminton court */
+  background-size: contain; /* Ensure the entire image fits within the div */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; /* Full width */
+  height: 199px; /* Fixed height */
+  box-sizing: border-box;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  padding: 0 10px; /* Padding to avoid text touching the edges */
+}
+
+.court-name {
+  color: #ffffff;
+  flex: 1;
+  padding: 180px;
+  max-width: 1px;
+  white-space: normal; /* Prevent text wrapping */
+  overflow: visible;
+  text-overflow: ellipsis; /* Ellipsis for overflowing text */
+  line-height: 75px;
+  padding-top: 20px;
+  padding-left: 35px;
+}
+
+.list-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 140px;
+  overflow-y: auto; /* Enable scrolling */
+  width: 100%; /* Full width */
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  max-height: 125px; /* Fixed height for the queue list */
+  overflow: auto; /* Enable scrolling */
 }
 
 li {
@@ -32,4 +74,18 @@ li {
 
 button {
   margin-left: 10px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  margin-bottom: 10px;
 }
