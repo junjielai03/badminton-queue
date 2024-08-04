@@ -20,7 +20,7 @@
 }
 
 .court-container {
-  border: 1px solid #000000;
+  border: 1px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-image: url('court.jpeg'); /* Background image of badminton court */
@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%; /* Full width */
-  height: 198.5px; /* Fixed height */
+  height: 200px; /* Fixed height */
   box-sizing: border-box;
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Space out items */
@@ -38,7 +38,7 @@
 .court-name {
   color: #ffffff;
   flex: 1;
-  padding: 180px;
+  padding: 185px;
   max-width: 1px;
   white-space: normal; /* Prevent text wrapping */
   overflow: visible;
