@@ -156,6 +156,7 @@ const App = () => {
         />
       </div>
       <div className="input-section">
+        <p className="instruction-text">Enter names separated by "/" if playing doubles. Example: "Bob/Joe"</p>
         <input
           type="text"
           value={inputValue}
