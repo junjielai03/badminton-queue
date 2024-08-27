@@ -31,10 +31,10 @@ const QueueAndStackComponent = ({ title, queue, setQueue, stack, setStack }) => 
         </div>
       <div>
         <button onClick={() => removeFirstFromStack(stack, setStack, queue, setQueue)} disabled={stack.length < 1}>
-          Remove First
+          Remove Left
         </button>
         <button onClick={() => removeSecondFromStack(stack, setStack, queue, setQueue)} disabled={stack.length < 2}>
-          Remove Second
+          Remove Right
         </button>
       </div>
       <h2>Next:</h2>
